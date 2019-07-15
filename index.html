@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>SONiC | Home</title>
 
     <!-- Favicon -->
@@ -137,12 +140,17 @@
   <!-- Start More Videos -->
   <section id="mu-about-us">
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-lg-12 col-md-12">
 			<div class="row">
 			  <div class="col-lg-6 col-md-6">				
 				  <h3 style="color: #01BAFD; margin-top: 70px; font-weight: bold"> Testing Workgroup</h3>
-                    <p>Join the mailing list <font color="#0000FF" size="3">sonic-test-workgroup@gmail.com </font></p>
-                    <p> Workgroup <a href="https://groups.google.com/forum/#!forum/sonic-test-workgroup"><font color="#0000FF" size="3">link</font></a></p>	
+				  <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; <font color="#0000FF" size="3">sonic-mgmt-workgroup@googlegroups.com </font></p>
+				  <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; <font color="#0000FF" size="3">sonic-mlag-workgroup@googlegroups.com </font></p>
+				  <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; <font color="#0000FF" size="3">sonic-vrf-workgroup@googlegroups.com </font></p>
+
+                    		  <p>Join the mailing list <font color="#0000FF" size="3">sonic-test-workgroup@gmail.com </font></p>
+                    		  <p> Workgroup <a href="https://groups.google.com/forum/#!forum/sonic-test-workgroup"><font color="#0000FF" size="3">link</font></a></p>
+	            
 					<h4 style="color: #01BAFD; margin-top: 70px; font-weight: bold"> Testing Workgroup Charter</h4>
 					<p> 1. Testbed improvement. 
 						<ul style="list-style-type:disc;padding-left: 30px;">
@@ -161,7 +169,7 @@
 						<ul style="list-style-type:disc;padding-left: 30px;">
 						   <li> strategy to conversion and deprecating the existing ansible test one-by-one. once a pytest has been developed, then we can deprecate the ansible test by calling the pytest in ansible playbook so that there is no change on the user side. Meanwhile, if there will be further improvement the improvement will go to pytest, and community does not need to maintain both versions. </li>
 						</ul>
-4. Specific/new tests: 
+						4. Specific/new tests: 
 						<ul style="list-style-type:disc;padding-left: 30px;">
 						   <li> Platform related tests. () </li>
 						   <li> Qos/RDMA tests. </li>
@@ -179,7 +187,28 @@
 						</ul>
 						6. One(AKA, Crystalnet) integration (open source) 
 					</p>
-			  </div>					  
+			  </div>
+			  <div class="col-lg-6 col-md-6">
+				  <h3 style="color: #01BAFD; margin-top: 70px; font-weight: bold"> Management Workgroup</h3>
+                    		  <p>Join the mailing list <font color="#0000FF" size="3">sonic-mgmt-workgroup@googlegroups.com </font></p>
+                    		  <p> Workgroup <a href="https://groups.google.com/forum/#!forum/sonic-mgmt-workgroup"><font color="#0000FF" size="3">mgmt-link</font></a></p>
+	            
+					<h4 style="color: #01BAFD; margin-top: 70px; font-weight: bold"> Management Workgroup Charter</h4>
+			               	<p> 1. Testbed improvement. 
+						<ul style="list-style-type:disc;padding-left: 30px;">
+						  <li> support sonic device as a neighbor. </li>
+						  <li> include pdu/console information.  </li>
+						  <li> using exabgp to build bgp routes.  </li>
+						</ul>
+
+						2. Pytest framework enhancement 
+						<ul style="list-style-type:disc;padding-left: 30px;">
+						   <li> How to execute commands on arista devices? </li>
+						   <li> How to improve the DUT reboot? Add console connection support so that we can see the console log while rebooting. </li>
+						   <li> Loganalyzer improvement can be implemented as a pytest fixture now. </li>
+						</ul>
+					</p>
+			  </div>       
             </div>
         </div>
     </div>
